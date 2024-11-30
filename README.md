@@ -28,7 +28,7 @@ https://github.com/entbappysanjayHoskal/Sample_mlflow_project
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n mlproj python=3.8 -y
+conda create -n mlproj python=3.13 -y
 ```
 
 ```bash
@@ -65,20 +65,23 @@ open up you local host and port
 ### dagshub
 [dagshub](https://dagshub.com/)
 
-MLFLOW_TRACKING_URI=https://dagshub.com/sanjayHoskal/Sample_mlflow_project \
-MLFLOW_TRACKING_USERNAME=sanjayHoskal \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
+import dagshub
+dagshub.init(repo_owner='sanjayHoskal', repo_name='Sample_mlflow_project', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
 
 Run this to export as env variables:
 
 ```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/sanjayHoskal/End-to-end-Machine-Learning-Project-with-MLflow.mlflow
+export MLFLOW_TRACKING_URI=https://dagshub.com/sanjayHoskal/Sample_mlflow_project.mlflow
 
 export MLFLOW_TRACKING_USERNAME=sanjayHoskal 
 
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+export MLFLOW_TRACKING_PASSWORD=847b59bc3cd0d5ae1bd475f634deece3247af8ec
 
 ```
 
