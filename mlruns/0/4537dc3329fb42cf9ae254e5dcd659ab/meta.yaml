@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Sample_mlflow_project/mlruns/0/4537dc3329fb42cf9ae254e5dcd659ab/artifacts
+end_time: 1733059664856
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4537dc3329fb42cf9ae254e5dcd659ab
+run_name: fearless-goose-944
+run_uuid: 4537dc3329fb42cf9ae254e5dcd659ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733059654503
+status: 3
+tags: []
+user_id: Admin
